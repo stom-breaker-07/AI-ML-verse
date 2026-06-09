@@ -1,0 +1,11 @@
+﻿Outlet_Identifier,Outlet_Establishment_Year,Outlet_Size,Outlet_Location_Type,Outlet_Type,Average_Customer_Age,Average_Income_Level,Household_Size,Seasonality_Data,Competitor_Presence,Distance_to_Transportation_Hubs
+OUT010,1998,Small,Tier 3,Grocery Store,35,50000,3,High Rainfall,No,10
+OUT013,1987,High,Tier 3,Supermarket Type1,40,60000,4,Low Rainfall,Yes,5
+OUT017,2007,Medium,Tier 2,Supermarket Type1,38,55000,3,High Temperature,No,3
+OUT018,2009,Medium,Tier 3,Supermarket Type2,37,58000,4,Holiday Season,Yes,7
+OUT019,1985,Small,Tier 1,Grocery Store,30,45000,2,Low Temperature,No,15
+OUT035,2004,Small,Tier 2,Supermarket Type1,36,52000,3,High Temperature,Yes,4
+OUT045,2002,High,Tier 2,Supermarket Type1,39,58000,4,Low Rainfall,Yes,6
+OUT049,1999,Medium,Tier 1,Supermarket Type1,37,56000,4,Holiday Season,Yes,4
+OUT050,2010,Medium,Tier 2,Supermarket Type1,38,57000,3,High Rainfall,No,6
+OUT051,2003,Medium,Tier 2,Supermarket Type1,36,55000,3,Low Temperature,Yes,5
