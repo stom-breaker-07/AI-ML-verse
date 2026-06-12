@@ -1,0 +1,40 @@
+-- 1. Find the total units sold per item.
+-- select Item_Name , (count(*)) as unit_count from items group by Item_Name order by unit_count;
+
+-- 2. Show the average unit price by brand 
+-- SELECT   i.Brand,
+--     ROUND(AVG(t.Unit_Price), 2) AS Avg_Unit_Price
+-- FROM `transaction` t
+-- INNER JOIN items i
+-- ON t._Item_Identifier = i.`ï»¿Item_Identifier`
+-- GROUP BY i.Brand order by Avg_Unit_Price ;
+
+-- 3. Count the number of transactions per payment method.
+-- select Payment_Method , (count(*)) as Count from transaction group by Payment_Method ;
+
+-- 4. Calculate the total revenue per outlet
+-- select `ï»¿Outlet_Identifier`, sum(Average_Income_Level) as Total_Income  from outlets group by `ï»¿Outlet_Identifier`;
+
+-- 5. Show the average unit margin for each item type.
+-- select i.Item_Type , round(avg(t.Unit_Price),1) as AVG_unit_Price from items i Inner join transaction t group by i.Item_Type ;
+
+-- 6. Find the number of outlets in each location type
+-- select Outlet_Location_Type , count(*) as Count from outlets group by Outlet_Location_Type ;
+
+-- 7. Display the average income level grouped by outlet size.
+-- select  Outlet_Size , sum(Average_Income_Level) as Income_level from outlets  group by Outlet_Size 
+-- select Outlet_Location_Type , sum(Average_Income_Level)  as Total from outlets where  Outlet_Size = 'Small' group by Outlet_Location_Type   ;
+
+-- 8. Show total units sold per brand across all outlets.items
+-- SELECT
+--     i.Brand,
+--     SUM(t.Units_Sold) AS Total_Units_Sold,
+--     round(SUM(Unit_Price)) as Total_Income_Of_Brand ,
+--     ROUND(SUM(t.Unit_Price) / SUM(t.Units_Sold), 1)  as per_Unit
+-- FROM `transaction` t
+-- INNER JOIN items i
+-- ON t._Item_Identifier = i.`ï»¿Item_Identifier`
+-- GROUP BY i.Brand
+-- ORDER BY per_Unit DESC;
+
+
