@@ -1,0 +1,27 @@
+-- 1. List all items ordered by brand name alphabetically
+-- select DISTINCT Item_Name , Brand , Item_Type from items order by Brand ;
+
+-- 2. Display transactions sorted by transaction date (most recent first
+-- select Customer_ID , Payment_Method , Transaction_Date from transaction order by Transaction_Date  desc;
+
+-- 3. Show outlets sorted by average income level descending.
+-- select * from outlets order by Average_Income_Level desc ;
+
+-- 4. Retrieve all items sorted by item type and then by item name
+-- select DISTINCT Item_Name , Brand , Item_Type from items order by  Item_Type , Item_Name ;
+
+-- 5. List the top-selling items by units sold in descending order.
+-- select i.Item_Name , i.Item_Type , i.Brand , t.Units_Sold , t.Unit_Price from items i left join transaction t on i.`ï»¿Item_Identifier` = t._Item_Identifier order by t.Units_Sold desc ;
+
+-- 6. Show outlets ordered by distance to transportation hubs (closest first)
+-- select * from outlets order by Distance_to_Transportation_Hubs ;
+
+-- 7. Sort transactions by unit margin descending.
+-- select * from transaction order by Unit_Margin desc ;
+
+-- 8. Display brands ordered by their average unit price (high to low).
+-- select i.Brand , round(avg(t.Unit_Price),2) as AVG_UNIT_price  from items i inner join transaction t on  i.`ï»¿Item_Identifier` = t._Item_Identifier group by i.Brand order by AVG_UNIT_price DESC ;
+
+-- 9. List all outlets ordered by establishment year (oldest first).
+-- select Outlet_Establishment_Year , Outlet_Type, Outlet_Location_Type from outlets order by Outlet_Establishment_Year ;
+
